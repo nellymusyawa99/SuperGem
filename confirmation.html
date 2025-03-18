@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <style>
+        body {
+            background-color:  #e8e8e8;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color:#FFD700;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .button {
+            background-color: #FFD700;
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Order Confirmation</h1>
+    <div class="container">
+        <p>Thank you for your purchase, <span id="customerName"></span>!</p>
+        <p>Your order for <strong><span id="productName"></span></strong> has been successfully placed.</p>
+        <p>Shipping Address: <span id="customerAddress"></span></p>
+        <p>Payment Method: <span id="paymentMethod"></span></p>
+        <p>We will send a confirmation email to <span id="customerEmail"></span> shortly.</p>
+        <a href="Home.html" class="button">Return to Home</a>
+    </div>
+
+    <script>
+        // Retrieve form data from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById("customerName").textContent = urlParams.get("name") || "Customer";
+        document.getElementById("customerEmail").textContent = urlParams.get("email") || "your email";
+        document.getElementById("customerAddress").textContent = urlParams.get("address") || "your address";
+        document.getElementById("productName").textContent = urlParams.get("product") || "your selected product";
+        document.getElementById("paymentMethod").textContent = urlParams.get("payment") || "your payment method";
+    </script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <style>
+        body {
+
+            background-color:  #e8e8e8;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(0, 255, 247);
+        }
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            background: rgba(255, 255, 255, 0.189);
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        
+        .button {
+            background-color: #FFD700;
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .navbar {
+    background-color: #D3D3D3;
+    padding: 11px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.navbar a:hover {
+    background-color: gold;
+    color: black;
+    border-radius: 5px;
+}
+.nav-links {
+    display: flex;
+    gap: 15px;
+} 
+.logo img {
+    height: 100px;
+    width: auto;
+}
+    </style>
+    <script>
+        function addToCart(product) {
+            alert(product + " has been added to your cart!");
+        }
+    </script>
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Street-removebg-preview.png" alt="logo">
+        </div>
+        <div class="nav-links">
+            <a href="Entry.html">Entry</a>
+            <a href="Home.html">Home</a>
+            <a href="Products.html">Products</a>
+            <a href="ContactUs.html">Contact Us</a>
+            <a href="transaction.html">Transaction </a>
+            
+            
+            
+        </div>
+    </nav>
+
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Image</th>
+            <th>Price</th>
+            <th>Buy Now</th>
+            <th>Add to Cart</th>
+        </tr>
+        <tr>
+            <td>Dainty gold ring</td>
+            <td><img src="Thin gold ring, gold ring, gold filled stack ring, dainty gold ring, stacking ring, everyday ring gift for her, simple band thin thick rings.jpeg" alt="Diamond Ring"></td>
+            <td>KSH 426,061</td>
+            <td><a href="transaction.html" class="button">Buy Now</a></td>
+            <td><button class="button" onclick="addToCart('Dainty gold ring')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Two Layered necklace</td>
+            <td><img src="10 Minimalist Fine Jewelry Brands For Everyday Wear  — The Good Trade.jpeg" alt="Swarovski-dancing swan necklace"></td>
+            <td>KSH 19,8800</td>
+            <td><a href="transaction.html" class="button">Buy Now</a></td>
+            <td><button class="button" onclick="addToCart('Two Layered necklace')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>5MM Herringbone Snake Chain</td>
+            <td><img src="5MM Herringbone Snake Chain • Gold or Silver - Gold _ 18.jpeg" alt="5MM Herringbone Snake Chain "></td>
+            <td>KES 7502,</td>
+            <td><a href="transaction.html" class="button">Buy Now</a></td>
+            <td><button class="button" onclick="addToCart('5MM Herringbone Snake Chain')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td> Black Voyage Ring</td>
+            <td><img src="Black Voyage Ring.jpeg" alt="Black Voyage Ring"></td>
+            <td>KSH 12,472</td>
+            <td><a href="transaction.html" class="button">Buy Now</a></td>
+            <td><button class="button" onclick="addToCart('Black Voyage Ring')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Flower Earrings</td>
+            <td><img src="Elli Paar Ohrstecker _Frangipani Blüte Blume Filigran 925 Silber_.jpeg" alt="Babituo anklet jewellery alloy rhinestone"></td>
+            <td>KSH 399</td>
+            <td><a href="transaction.html" class="button">Buy Now</a></td>
+            <td><button class="button" onclick="addToCart('Flower Earrings')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>Gold Dome Ring</td>
+            <td><img src="Gold Dome Ring.jpeg" alt="Gold Dome Ring"></td>
+            <td>KSH 1,000</td>
+            <td><a href="transaction.html" class="button">Buy Now</a></td>
+            <td><button class="button" onclick="addToCart('Gold Dome Ring')">Add to Cart</button></td>
+        </tr>
+    </table>
+
+</body>
+</html>
